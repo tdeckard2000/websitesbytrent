@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "@/styles/Header.module.scss"
 
-interface props {
-    
+interface Props {
+    isMobile: boolean
 }
 
-export const HeaderComponent = () => {
-
+export const HeaderComponent = (props: Props) => {
     return (
     <div className={styles.headerBody}>
         <div className={styles.flexContainer}>
@@ -20,6 +19,9 @@ export const HeaderComponent = () => {
                 <div className={styles.button}>Services</div>
                 {/* <div>Portfolio</div> */}
                 <div className={styles.button}>Contact</div>
+            </div>
+            <div className={styles.menuIcon}>
+                <img src="iconMenu.svg" alt="" />
             </div>
         </div>
     </div>

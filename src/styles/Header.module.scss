@@ -1,8 +1,10 @@
 .flexContainer {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 850px;
 }
 
 .headerBody {
@@ -13,9 +15,13 @@
     width: 100vw;
 }
 
+.hide {
+    display: none
+}
+
 .logoContainer {
     color: rgb(255, 255, 255);
-    margin: 35px;
+    margin: 35px 0;
     text-align: center;
     width: 195px;
 
@@ -28,6 +34,12 @@
         font-weight: 700;
         font-size: 45px;
     }
+}
+
+.menuIcon {
+    display: none;
+    cursor: pointer;
+    user-select: none;
 }
 
 .pageLinks {
@@ -46,5 +58,46 @@
 
     .underline {
         border-bottom: 2px solid blue;
+    }
+}
+
+@media screen and (max-width: 900px) { //tablet
+
+    .flexContainer {
+        max-width: 600px;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .pageLinks {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 650px) { //tablet
+
+    .flexContainer {
+        max-width: none;
+        width: 100vw;
+    }
+
+    .logoContainer {
+        margin: 20px 20px;
+        width: fit-content;
+
+        .bottom {
+            font-size: 14px;
+        }
+
+        .top {
+            font-size: 30px;
+        }
+    }
+
+    .menuIcon {
+        margin: 20px 20px;
     }
 }

@@ -37,8 +37,8 @@
 
     img {
         position: absolute;
-        right: 10px;
-        top: 200px;
+        right: 5%;
+        top: 325px;
         width: 600px;
     }
 
@@ -47,8 +47,9 @@
 .introBody {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 100px 0;
+    justify-content: space-between;
+    margin: 100px auto;
+    max-width: 850px;
 }
 
 .introContainer {
@@ -57,4 +58,49 @@
     background-size: cover;
     /* background-color: aqua; */
     height: 800px;
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 650px) { //tablet
+
+    .introBody {
+        flex-direction: column;
+        margin: 30px auto;
+
+        .colLeft {
+            width: 100vw;
+
+            .header {
+                font-size: 46px;
+                text-align: center;
+            }
+
+            .body {
+                margin: 20px;
+                text-align: center;
+            }
+
+            .button {
+                margin: 35px auto;
+            }
+        }
+
+        .colRight {
+            position: relative;
+            width: 100vw;
+            img {
+                display: block;
+                left: 0;
+                margin: auto;
+                position: relative;
+                top: 0px;
+                width: 100vw;
+            }
+        
+        }
+    }
+
 }
