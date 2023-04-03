@@ -38,7 +38,7 @@
     img {
         position: absolute;
         right: 5%;
-        top: 325px;
+        top: 360px;
         width: 600px;
     }
 
@@ -61,6 +61,28 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    .introBody {
+
+        .colLeft {
+            margin: auto;
+            width: 600px;
+
+            .header {
+                margin: 0 20px;
+            }
+        }
+
+        .colRight {
+            img {
+                display: block;
+                right: 8%;
+                top: 390px;
+                width: 50vw;
+            }
+        
+        }
+    }
 
 }
 
