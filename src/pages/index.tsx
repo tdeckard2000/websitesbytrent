@@ -21,6 +21,7 @@ export default function Home() {
             <div className={styles.colLeft}>
               <div className={styles.header}>Web Design + Development</div>
               <div className={styles.body}>No page builders or WordPress - We offer 100% hand-coded websites with superior results starting at $150/mo.</div>
+              <div className={styles.button}>GET A WEBSITE!</div>
             </div>
             <div className={styles.colRight}>IMAGE HERE</div>
           </div>

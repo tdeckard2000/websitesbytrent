@@ -11,8 +11,8 @@ export const HeaderComponent = () => {
     <div className={styles.headerBody}>
         <div className={styles.flexContainer}>
             <div className={styles.logoContainer}>
-                <div>TedTech</div>
-                <div>Web Solutions LLC</div>
+                <div className={styles.top}>TedTech</div>
+                <div className={styles.bottom}>Web Solutions LLC</div>
             </div>
             <div className={styles.pageLinks}>
                 <div className={styles.button}>Home</div>
