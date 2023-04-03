@@ -1,0 +1,33 @@
+.colLeft {
+    color: white;
+    max-width: 600px;
+    width: 50%;
+
+    .body {
+        margin: 30px 0;
+    }
+    
+    .header {
+        font-size: 50px;
+        font-weight: 800;
+    }
+}
+
+.colRight {
+
+}
+
+.introBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+
+.introContainer {
+    background-image: url(../../public/wave8.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: aqua; */
+    height: 800px;
+}

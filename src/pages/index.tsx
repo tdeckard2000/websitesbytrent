@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.scss'
 import { HeaderComponent } from '@/components/header'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,9 +15,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.homeIntroContainer}>
+        <div className={styles.introContainer}>
           <HeaderComponent></HeaderComponent>
-          <div>Web Design + Development</div>
+          <div className={styles.introBody}>
+            <div className={styles.colLeft}>
+              <div className={styles.header}>Web Design + Development</div>
+              <div className={styles.body}>No page builders or WordPress - We offer 100% hand-coded websites with superior results starting at $150/mo.</div>
+            </div>
+            <div className={styles.colRight}>IMAGE HERE</div>
+          </div>
         </div>
       </main>
     </>
