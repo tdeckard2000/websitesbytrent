@@ -8,17 +8,33 @@
     background-color: grey;
     position: relative;
     height: 100px;
+    padding: 0;
+    width: 100vw;
 }
 
 .logoContainer {
-    margin: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin: 35px;
+    width: 195px;
 }
 
 .pageLinks {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    font-weight: 500;
+    justify-content: space-around;
     margin: 40px;
     width: 800px;
+
+    .button {
+        border-bottom: 2px solid rgba(0, 0, 255, 0);
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .underline {
+        border-bottom: 2px solid blue;
+    }
 }
