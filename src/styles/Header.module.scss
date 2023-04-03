@@ -1,0 +1,24 @@
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headerBody {
+    background-color: grey;
+    position: relative;
+    height: 100px;
+}
+
+.logoContainer {
+    margin: 40px;
+}
+
+.pageLinks {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+    width: 800px;
+}
